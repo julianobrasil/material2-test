@@ -1,0 +1,29 @@
+<div [style.padding]="'10px'">
+  <mat-card>
+    <mat-card-content>
+      <div fxLayout="row">
+        <div>
+          <button mat-button (click)="openDialog()">Open Dialog</button>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<div [style.padding]="'10px'">
+  <mat-card>
+    <mat-card-content>
+      <div>
+        <form novalidate [formGroup]="theForm">
+          <mat-checkbox formControlName="allDay">Check to test</mat-checkbox>
+        </form>
+        <ng-container *ngIf="theForm.controls.allDay.value;else elseBlock">
+          I'm checked
+        </ng-container>
+        <ng-template #elseBlock>
+          I'm not checked
+        </ng-template>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
