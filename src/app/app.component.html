@@ -34,10 +34,13 @@
       <div>
         <form novalidate [formGroup]="theForm2">
           <mat-form-field>
-            <input matInput formControlName="appInput" placeholder="Type something">
+            <input matInput formControlName="appName" placeholder="Name">
           </mat-form-field>
+          <mat-form-field>
+              <input matInput formControlName="appSurname" placeholder="Surname">
+            </mat-form-field>
         </form>
-        {{theForm2.value['appInput']}}
+        {{theForm2.value.appName}} {{theForm2.value.appSurname}}
       </div>
     </mat-card-content>
   </mat-card>
