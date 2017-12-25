@@ -10,12 +10,17 @@ import { MatDialogRef, MatDialog, MatSnackBar } from '@angular/material';
 })
 export class AppComponent {
   theForm: FormGroup;
+  theForm2: FormGroup;
 
   constructor(private fb: FormBuilder,
     private dialog: MatDialog,
     private snackBar: MatSnackBar) {
     this.theForm = fb.group({
       allDay: null
+    });
+
+    this.theForm2 = fb.group({
+      'app-input': null
     });
   }
 
