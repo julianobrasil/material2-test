@@ -10,6 +10,8 @@ import {
   MatCardModule,
   MatCheckboxModule,
   MatDialogModule,
+  MatFormFieldModule,
+  MatInputModule,
   MatSnackBarModule,
 } from '@angular/material';
 
@@ -32,6 +34,8 @@ import 'hammerjs';
     MatCardModule,
     MatCheckboxModule,
     MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
     MatSnackBarModule,
 
     FlexLayoutModule
