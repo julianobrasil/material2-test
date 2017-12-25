@@ -34,10 +34,10 @@
       <div>
         <form novalidate [formGroup]="theForm2">
           <mat-form-field>
-            <input matInput formControlName="appName" placeholder="Name">
+            <input matInput formControlName="appName" placeholder="Name" autocomplete="off">
           </mat-form-field>
           <mat-form-field>
-              <input matInput formControlName="appSurname" placeholder="Surname">
+              <input matInput formControlName="appSurname" placeholder="Surname" autocomplete="off">
             </mat-form-field>
         </form>
         {{theForm2.value.appName}} {{theForm2.value.appSurname}}
