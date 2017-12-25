@@ -27,3 +27,18 @@
     </mat-card-content>
   </mat-card>
 </div>
+
+<div [style.padding]="'10px'">
+  <mat-card>
+    <mat-card-content>
+      <div>
+        <form novalidate [formGroup]="theForm2">
+          <mat-form-field>
+            <input matInput formControlName="app-input" placeholder="Type something">
+          </mat-form-field>
+        </form>
+        {{theForm2.value.app-input}}
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
