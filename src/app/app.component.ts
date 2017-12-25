@@ -20,7 +20,8 @@ export class AppComponent {
     });
 
     this.theForm2 = fb.group({
-      'appInput': null
+      'appName': '',
+      'appSurname': ''
     });
   }
 
