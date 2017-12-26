@@ -45,11 +45,11 @@
             <input matInput formControlName="appSurname" placeholder="Surname" autocomplete="off">
           </mat-form-field>
         </form>
-        Inside material component: {{theForm2.value.appName}} {{theForm2.value.appSurname}}
+        Inside mat-card: {{theForm2.value.appName}} {{theForm2.value.appSurname}}
       </div>
     </mat-card-content>
   </mat-card>
-  Out of material component: {{theForm2.value.appName}} {{theForm2.value.appSurname}}
+  Out of any material2 component: {{theForm2.value.appName}} {{theForm2.value.appSurname}}
 </div>
 
 <div [style.padding]="'10px'">
@@ -67,9 +67,9 @@
         <mat-form-field>
           <input matInput [(ngModel)]="appSurname" placeholder="Surname" autocomplete="off">
         </mat-form-field>
-        Inside material component: {{appName}} {{appSurname}}
+        Inside mat-card: {{appName}} {{appSurname}}
       </div>
     </mat-card-content>
   </mat-card>
-  Out of material component: {{appName}} {{appSurname}}
+  Out of any material2 component: {{appName}} {{appSurname}}
 </div>
