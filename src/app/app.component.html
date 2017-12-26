@@ -30,6 +30,9 @@
 
 <div [style.padding]="'10px'">
   <mat-card>
+    <mat-card-title>
+      Using Reactive Forms
+    </mat-card-title>
     <mat-card-content>
       <div>
         <form novalidate [formGroup]="theForm2">
@@ -45,4 +48,24 @@
     </mat-card-content>
   </mat-card>
   Out of material component: {{theForm2.value.appName}} {{theForm2.value.appSurname}}
+</div>
+
+<div [style.padding]="'10px'">
+  <mat-card>
+    <mat-card-title>
+      Using Template Driven Forms
+    </mat-card-title>
+    <mat-card-content>
+      <div>
+        <mat-form-field>
+          <input matInput [(ngModel)]="appName" placeholder="Name" autocomplete="off">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput [(ngModel)]="appSurname" placeholder="Surname" autocomplete="off">
+        </mat-form-field>
+        Inside material component: {{appName}} {{appSurname}}
+      </div>
+    </mat-card-content>
+  </mat-card>
+  Out of material component: {{appName}} {{appSurname}}
 </div>
