@@ -12,6 +12,9 @@ export class AppComponent {
   theForm: FormGroup;
   theForm2: FormGroup;
 
+  appName = '';
+  appSurname = ''
+
   constructor(private fb: FormBuilder,
     private dialog: MatDialog,
     private snackBar: MatSnackBar) {
