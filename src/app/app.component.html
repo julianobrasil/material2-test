@@ -40,8 +40,9 @@
               <input matInput formControlName="appSurname" placeholder="Surname" autocomplete="off">
             </mat-form-field>
         </form>
-        {{theForm2.value.appName}} {{theForm2.value.appSurname}}
+        Inside material component: {{theForm2.value.appName}} {{theForm2.value.appSurname}}
       </div>
     </mat-card-content>
   </mat-card>
+  Out of material component: {{theForm2.value.appName}} {{theForm2.value.appSurname}}
 </div>
