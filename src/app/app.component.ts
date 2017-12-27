@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 import { MatDialogRef, MatDialog, MatSnackBar } from '@angular/material';
 
@@ -23,7 +23,7 @@ export class AppComponent {
     });
 
     this.theForm2 = fb.group({
-      'appName': '',
+      'appName': ['', Validators.required],
       'appSurname': ''
     });
   }

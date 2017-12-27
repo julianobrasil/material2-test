@@ -38,8 +38,8 @@
     <mat-card-content>
       <div>
         <form novalidate [formGroup]="theForm2">
-          <mat-form-field>
-            <input matInput formControlName="appName" placeholder="Name" autocomplete="off">
+          <mat-form-field [hideRequiredMarker]="false">
+            <input matInput formControlName="appName" placeholder="Name" autocomplete="off" required>
           </mat-form-field>
           <mat-form-field>
             <input matInput formControlName="appSurname" placeholder="Surname" autocomplete="off">
@@ -62,7 +62,7 @@
     <mat-card-content>
       <div>
         <mat-form-field>
-          <input matInput [(ngModel)]="appName" placeholder="Name" autocomplete="off">
+          <input matInput [(ngModel)]="appName" placeholder="Name" autocomplete="off" required>
         </mat-form-field>
         <mat-form-field>
           <input matInput [(ngModel)]="appSurname" placeholder="Surname" autocomplete="off">
