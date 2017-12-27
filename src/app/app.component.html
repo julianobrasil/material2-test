@@ -38,7 +38,7 @@
     <mat-card-content>
       <div>
         <form novalidate [formGroup]="theForm2">
-          <mat-form-field>
+          <mat-form-field [hideRequiredMarker]="false">
             <input matInput formControlName="appName" placeholder="Name" autocomplete="off">
           </mat-form-field>
           <mat-form-field>
