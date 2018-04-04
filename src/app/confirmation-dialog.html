@@ -1,9 +1,19 @@
 <mat-dialog-content>
-    <p>
-        Do you want to see the snackbar?
-    </p>
+  <mat-tab-group class="tabs">
+
+    <mat-tab label="foo">
+      foo
+    </mat-tab>
+
+    <mat-tab label="bar">
+      <ng-template matTabContent>
+        bar
+      </ng-template>
+    </mat-tab>
+
+  </mat-tab-group>
 </mat-dialog-content>
 <mat-dialog-actions>
-    <button mat-button (click)="onYesClick()" tabindex="1">YES</button>
-    <button mat-button mat-dialog-close tabindex="-1">NO</button>
+  <button mat-button (click)="onYesClick()" tabindex="1">YES</button>
+  <button mat-button mat-dialog-close tabindex="-1">NO</button>
 </mat-dialog-actions>
