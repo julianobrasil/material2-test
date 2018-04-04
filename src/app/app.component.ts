@@ -1,5 +1,5 @@
 import { Component, Directive } from '@angular/core';
-import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
 
 import { MatDialogRef, MatDialog, MatSnackBar } from '@angular/material';
 
@@ -29,7 +29,7 @@ export class AppComponent {
     });
 
     this.theForm2 = fb.group({
-      'appName': '',
+      'appName': ['', Validators.required],
       'appSurname': ''
     });
   }
@@ -82,10 +82,10 @@ export const DEMO_MOMENT_MONTH_YEAR_FORMATS = {
 };
 
 @Directive({
-  selector: '[demo-moment-month-year]',
+  selector: '[appDemoMomentMonthYear]',
   providers: [
     { provide: DateAdapter, useClass: MomentDateAdapter, deps: [MAT_DATE_LOCALE] },
     { provide: MAT_DATE_FORMATS, useValue: DEMO_MOMENT_MONTH_YEAR_FORMATS },
   ],
 })
-export class DemoMomentMonthYear { }
+export class DemoMomentMonthYearDirective { }

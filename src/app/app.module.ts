@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { AppComponent, ConfirmationDialog, DemoMomentMonthYear } from './app.component';
+import { AppComponent, ConfirmationDialog, DemoMomentMonthYearDirective } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {
@@ -41,7 +41,7 @@ import { CompComponent } from './comp/comp.component';
   declarations: [
     AppComponent,
     ConfirmationDialog,
-    DemoMomentMonthYear,
+    DemoMomentMonthYearDirective,
     CompComponent
   ],
   imports: [
