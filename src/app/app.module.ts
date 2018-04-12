@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, LOCALE_ID } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { DragulaModule } from 'ng2-dragula';
+
 import { AppComponent, ConfirmationDialog, DemoMomentMonthYearDirective } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -54,6 +56,8 @@ import { CompComponent } from './comp/comp.component';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
+
+    DragulaModule,
 
     // Material
     MatButtonModule,
